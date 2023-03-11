@@ -21,28 +21,34 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Eric439676&#39;s Blog">
-<meta property="og:url" content="http://example.com/index.html">
+  <meta name="description" content="前言：首先来看原题灵感来自于九上数学《课时》，P87第11题图2。  $如下图,已知 A,B,C,D 共圆,AB&#x3D;2,CD&#x3D;4;AC \bot BD,求圆的半径r.$$（可拖动下图点A寻找思路）$    当时我看到这道题给出的 $2$ 和 $4$，就立马想到了$1:2:\sqrt{5}$的比例，大概估计是$Rt \triangle$的直角边，而直径作为斜边。 那么直径$d$就应">
+<meta property="og:type" content="article">
+<meta property="og:title" content="移心定理及其推广">
+<meta property="og:url" content="http://example.com/2022/09/25/Center-Shifting-Theorem/Center-Shifting-Theorem/index.html">
 <meta property="og:site_name" content="Eric439676&#39;s Blog">
+<meta property="og:description" content="前言：首先来看原题灵感来自于九上数学《课时》，P87第11题图2。  $如下图,已知 A,B,C,D 共圆,AB&#x3D;2,CD&#x3D;4;AC \bot BD,求圆的半径r.$$（可拖动下图点A寻找思路）$    当时我看到这道题给出的 $2$ 和 $4$，就立马想到了$1:2:\sqrt{5}$的比例，大概估计是$Rt \triangle$的直角边，而直径作为斜边。 那么直径$d$就应">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2022-09-25T05:40:17.000Z">
+<meta property="article:modified_time" content="2023-03-11T07:48:33.021Z">
 <meta property="article:author" content="Eric439676">
+<meta property="article:tag" content="初等数学">
+<meta property="article:tag" content="几何">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://example.com/">
+<link rel="canonical" href="http://example.com/2022/09/25/Center-Shifting-Theorem/Center-Shifting-Theorem/">
 
 
 <script id="page-configurations">
   // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
-    isHome : true,
-    isPost : false,
+    isHome : false,
+    isPost : true,
     lang   : 'en'
   };
 </script>
 
-  <title>Eric439676's Blog</title>
+  <title>移心定理及其推广 | Eric439676's Blog</title>
   
 
 
@@ -167,122 +173,10 @@
         <div class="content-wrap">
           
 
-          <div class="content index posts-expand">
+          <div class="content post posts-expand">
             
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2023/03/08/Weekly-Maths-Test/Weekly-Maths-Test/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Eric439676">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Eric439676's Blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2023/03/08/Weekly-Maths-Test/Weekly-Maths-Test/" class="post-title-link" itemprop="url">20230303数学试卷讲解</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2023-03-08 22:35:03" itemprop="dateCreated datePublished" datetime="2023-03-08T22:35:03+08:00">2023-03-08</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2023-03-11 21:54:24" itemprop="dateModified" datetime="2023-03-11T21:54:24+08:00">2023-03-11</time>
-              </span>
-
-          
-            <span class="post-meta-item" title="Views">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-users"></i>
-              </span>
-              <span class="post-meta-item-text">Views: </span>
-              <span class="firestore-visitors-count"></span>
-            </span>
-
-        </div>
-      </header>
 
     
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>首先先来看一下要讲到的题目，读者可以先行暂停思考。</p>
-<blockquote>
-<p>已知$A&#x3D; \{ a_1,a_2,a_3,a_4 \}，B&#x3D;\{a_1^2,a_2^2,a_4^2\}$，且$a_1&lt;a_2&lt;a_3&lt;a_4$，其中$a_i \in \mathbb{Z}（i&#x3D;1,2,3,4）$，若$A\cap B&#x3D; \{a_2，a_3\}$，$a_1+a_3&#x3D;0$，且$A\cup B$的所有元素之和为$56$，求$a_3+a_4$.</p>
-</blockquote>
-<blockquote>
-<p>有三支股票$A,B,C$,$28$位股民的持有情况如下：每位股民至少持有其中一支股票。在不持有$A$股票的人中，持有$B$股票的人数是持有$C$股票的人数的$2$倍。在持有$A$股票的人中，只持有$A$股票的人数比除了持有$A$股票外，同时还持有其它股票的人数多$1$。在只持有一支股票的人中，有一半持有$A$股票，则只持有$B$股票的股民人数是____.</p>
-</blockquote>
-<blockquote>
-<p>记$|S|$为集合$S$的元素个数，$\sigma (S)$为集合$S$的子集个数，若集合$A,B,C$满足：①$|A|&#x3D;|B|&#x3D;2020$; ②$\sigma (A) + \sigma (B) + \sigma (C) &#x3D; \sigma (A \cup B \cup C)$ ,则$|A \cap B \cap C|$的最大值是____.</p>
-</blockquote>
-<blockquote>
-<p>已知$M$是满足下列条件的集合：<br>$①0 \in M,1 \in M;$<br>$②若x,y \in M,则x-y \in M;$<br>$③若x \in M,x\neq 0,则\dfrac{1}{x} \in M.$<br>⑴判断 $\dfrac{1}{2} \in M$ 是否正确，说明理由;<br>⑵证明：若$x,y \in M$,则$xy \in M.$</p>
-</blockquote>
-<p>这四题都是高中数学中集合有关内容，其中包含：<strong>离散型变量集合，文字型关系描述，以及集合先决性条件的内推</strong>。相信部分有能力的读者已经能够领悟并且运用其中的意思。</p>
-<h1 id="讲解"><a href="#讲解" class="headerlink" title="讲解"></a>讲解</h1><h2 id="离散型变量集合"><a href="#离散型变量集合" class="headerlink" title="离散型变量集合"></a>离散型变量集合</h2><p>已知$A&#x3D;\{a_1，a_2，a_3，a_4\}，B&#x3D;\{a_1^2，a_2^2，a_4^2\}$，且$a_1&lt;a_2&lt;a_3&lt;a_4$，其中$a_i \in \mathbb{Z}（i&#x3D;1,2,3,4）$，若$A\cap B&#x3D; \{a_2，a_3\}$，$a_1+a_3&#x3D;0$，且$A\cup B$的所有元素之和为$56$，求$a_3+a_4$.</p>
-<p>先从条件入手。$a_i \in \mathbb{Z}$，说明$a_1,a_2,a_3,a_4$都是<strong>整数</strong>；而$B$中元素全为<strong>平方项</strong>，说明$B$中元素都$\geq0$，下文记作$B \subseteq [0,+ \infty)$。</p>
-<p>$$\because B \subseteq [0,+ \infty),A\cap B&#x3D; \{a_2，a_3\}$$</p>
-<p>$$\therefore a_2 \ge 0,a_3 \ge 0$$</p>
-<p>又$$\because a_1+a_3&#x3D;0$$<br>$$\therefore a_1 \le 0$$</p>
-<p>由于$a_1,a_3$同属一个集合，所以实际上，$a_1 &lt; 0,a_3 &gt; 0$。</p>
-<p>时刻要注意的是，由于所有的元素都是整数，因此$a_1 \le -1,a_3 \ge 1$.</p>
-<p>此时我们可以将$B$中的$a_1^2$改写为$a_3^2$。</p>
-<p>于是$B &#x3D; \{ a_3^2,a_2^2,a_4^2 \}$。</p>
-<p>接下来寻找<strong>交集</strong>的对应关系。$A$中参与交集的元素可以确定是$a_2$和$a_3$，所以只需考虑$B$中元素。<br>$$\because a_3 &lt; a_4 \quad (a_3\ge1)$$<br>$$\therefore a_3 &lt; a_4^2$$<br>于是易得：$a_3 &lt; a_4^2,a_2 &lt; a_4^2$<br>所以$a_4^2$自然不属于交集范围内。而显然$a_2 \neq a_3^2$，因此只能：<br>$$\begin{cases}<br>a_2&#x3D;a_2^2\\<br>a_3&#x3D;a_3^2<br>\end{cases}$$<br>解得<br>$$\begin{cases}<br>a_2&#x3D;1\\<br>a_3&#x3D;0<br>\end{cases}(舍)\quad 或\quad<br>\begin{cases}<br>a_2&#x3D;0\\<br>a_3&#x3D;1<br>\end{cases}$$<br>余下步骤留给读者作为练习。</p>
-<h2 id="文字型关系描述"><a href="#文字型关系描述" class="headerlink" title="文字型关系描述"></a>文字型关系描述</h2><p>有三支股票$A,B,C$,$28$位股民的持有情况如下：每位股民至少持有其中一支股票。在不持有$A$股票的人中，持有$B$股票的人数是持有$C$股票的人数的$2$倍。在持有$A$股票的人中，只持有$A$股票的人数比除了持有$A$股票外，同时还持有其它股票的人数多$1$。在只持有一支股票的人中，有一半持有$A$股票，则只持有$B$股票的股民人数是____.</p>
-<p>对于一大段文字，一步步列出集合关系往往不是最有效的方法，不如画$Venn$图。</p>
-<h3 id="老师讲的方法"><a href="#老师讲的方法" class="headerlink" title="老师讲的方法"></a>老师讲的方法</h3><p><img src="https://pic.imgdb.cn/item/640c6fe1f144a0100758fcc5.png"><br>左上角为$A$股票，左下角为$B$股票，右侧为$C$股票，其中各个式子代表相同颜色区域的人数。<br>然后根据题意可以列得：<br>$$\begin{cases}<br>a+b&#x3D;2(a+c) \qquad ①\\<br>b+c&#x3D;x \qquad ②\\<br>x+(x-1)+a+b+c&#x3D;28 \qquad ③<br>\end{cases}$$<br>有人会问：这不是四个未知数三个方程吗，怎么求解？再次强调：<strong>这是一个整数问题。</strong>将$①②$整理后得：<br>$$\begin{cases}<br>b&#x3D;a+2c\\<br>x&#x3D;b+c&#x3D;a+3c<br>\end{cases}$$<br>再一起代入$③$式：<br>$$4a+9c&#x3D;29 \quad (a,c \in \mathbb{N_+})$$<br>有唯一解<br>$$\begin{cases}<br>a&#x3D;5\\<br>c&#x3D;1<br>\end{cases}.$$</p>
-<h3 id="我的做法"><a href="#我的做法" class="headerlink" title="我的做法"></a>我的做法</h3><p><img src="https://pic.imgdb.cn/item/640c76a2f144a01007689be2.png"><br>这里我先将蓝色的部分设为$2x$，黄色部分设为$2a$，是便于后续的操作。然而，最后得出的关系是：<br>$$9x-a&#x3D;29$$<br>然而根本得不到合理的整数解！原因是什么呢？考完试之后我才研究明白，这样设参是把$x$和$a$的值域扩张了，从原来的$x,a\in \mathbb{N_+}$变成了<br>$$\{ x |x&#x3D;\frac{1}{2}k,k \in \mathbb{N_+}\}$$<br>于是才会出现所有整数解都不符合实际的情况。（此处的求解较有意思，读者可尝试）这也给我们在设参解方程时一个<strong>全新的</strong>启示：<strong>勿增值域。如非必要，请至少将一项设为系数为$1$的单项式。</strong></p>
-<h2 id="从抽象到具体"><a href="#从抽象到具体" class="headerlink" title="从抽象到具体"></a>从抽象到具体</h2><p>记$|S|$为集合$S$的元素个数，$\sigma (S)$为集合$S$的子集个数，若集合$A,B,C$满足：①$|A|&#x3D;|B|&#x3D;2020$; ②$\sigma (A) + \sigma (B) + \sigma (C) &#x3D; \sigma (A \cup B \cup C)$ ,则$|A \cap B \cap C|$的最大值是____.</p>
-<p><strong>首先注意审题！</strong>考试时我就始终把题中加号看成了乘号，一直认为$C$就是空集。</p>
-<p>那么这道题的正确做法应该是？需要大胆一点，设$|C|&#x3D;x,|A \cup B \cup C|&#x3D;y$,只有这样才能让“抽象”的集合运算转化为“可操作的(operative)”代数运算。</p>
-<p>于是有<br>$$2^{2020} + 2^{2020} + 2^x &#x3D; 2^y \quad (x,y \in \mathbb{N})$$<br>自然可得<br>$$\begin{cases}<br>x&#x3D;2021\\<br>y&#x3D;2022<br>\end{cases}.$$<br>本题需要大量技巧与积累的浓缩，实际上手极难。而接下来的过程也比较有趣，请读者自行探究。</p>
-<h2 id="集合先决性条件的内推"><a href="#集合先决性条件的内推" class="headerlink" title="集合先决性条件的内推"></a>集合先决性条件的内推</h2><p>已知$M$是满足下列条件的集合：<br>$①0 \in M,1 \in M;$<br>$②若x,y \in M,则x-y \in M;$<br>$③若x \in M,x\neq 0,则\dfrac{1}{x} \in M.$<br>⑴判断 $\dfrac{1}{2} \in M$ 是否正确，说明理由;<br>⑵证明：若$x,y \in M$,则$xy \in M.$</p>
-<p>本题从第一小问就已经开始令人痛苦。当时我尝试“不完备地”推出集合$M$是有理数集去证明，被扣了全分。这里的$x,y,M$都与集合的描述法中$x$是个代表元一样，从未“代表”任何数值，永远无法真正的具体推导，因此我称其为<strong>“抽象运算&#x2F;抽象推理”</strong>，颇有上升为哲学的高度，成为数学中的范畴论（实际上，本质是意识形态哲学）。</p>
-<h3 id="第1小问"><a href="#第1小问" class="headerlink" title="第1小问"></a>第1小问</h3><p>不要找不到头脑。先根据条件推推看里面有什么元素。</p>
-<p>$$\because 0,1 \in M$$<br>$$\therefore -1 \in M \quad (0-1&#x3D;-1)$$<br>$$\therefore 2 \in M \quad (1-(-1)&#x3D;2)$$<br>$$\therefore \frac{1}{2} \in M$$</p>
-<h3 id="第2小问"><a href="#第2小问" class="headerlink" title="第2小问"></a>第2小问</h3><p>对于一个从未见过这种题型的人来说，还是挺困难的。</p>
-<p>我们首先可以感知到，有了$0,x \in M$可以推出$-x \in M$。用箭头重新表示其关系：<br>$$x \Rightarrow -x$$<br>$$\therefore x-y \Rightarrow x+y$$<br>也就是说，我们从获得$x-y$的能力开始，又获得了$x+y$的<strong>能力</strong>。这很像戴森球计划或其他工业类游戏中，通关前置任务就可以<strong>解锁科技树</strong>。或者我们像刚出生的婴儿，一开始只有减法的能力，后来慢慢在头脑里孕育了加法的能力。（其本质是黑格尔的辩证法）</p>
-<p>那我们既然有了$x+y$，离$xy$也就不远了：$xy&#x3D; \dfrac{(x+y)^2-(x^2+y^2)}{2}$。观察发现，我们还缺少一种叫做“平方”的技能。</p>
-<p>还记得裂项相消的典型示例吗？我们将分母为二次多项式的分式拆成了两个分母为一次多项式的分式，即<strong>我们做到了降次</strong>。<br>$$ \frac{1}{x^2-x} &#x3D; \frac{1}{x(x-1)} &#x3D; \frac{1}{x-1} - \frac{1}{x}$$<br>翻转一下，如果我们能做到升次，那么就能解锁平方了。<br>$$\because x \in M,x-1 \in M$$<br>$$\therefore  \frac{1}{x} , \frac{1}{x-1} \in M$$<br>$$\therefore \frac{1}{x(x-1)} &#x3D;  \frac{1}{x^2-x} \in M$$<br>$$\therefore x^2-x \in M$$<br>$$\because -x \in M ; \therefore (x^2-x-(-x))&#x3D;x^2 \in M$$</p>
-<p>终于解锁平方啦！接下来自然有$$(x+y)^2-(x^2+y^2) \in M$$。<br>那要怎么让它除以2呢？需要借助一点小小的倒数。<br>为避免麻烦，设$(x+y)^2-(x^2+y^2)&#x3D;k$，则<br>$$\because k \in M$$<br>$$\therefore \frac{1}{k} \in M$$<br>$$\therefore \frac{1}{k}+\frac{1}{k}&#x3D;\frac{2}{k} \in M$$<br>$$\therefore \frac{k}{2} \in M. ; \square$$<br>过程很神奇也很烧脑，下为整体图例，读者可以好好品味一下。<br>$$\begin{matrix}<br>x-y \Rightarrow x+y \\<br>\begin{matrix}<br>\dfrac{1}{x}\\<br>\dfrac{1}{x-1}<br>\end{matrix} \Rightarrow x^2-x \Rightarrow x^2<br>\end{matrix} \Rightarrow k \Rightarrow \dfrac{k}{2} \Rightarrow xy$$ </p>
-<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>之后不一定每次考试都能有时间制作$\LaTeX$文档来讲试卷，不过作为第一场考试，算是让我见识到高中数学的威力。以后暂且不谈。</p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
@@ -298,10 +192,9 @@
       <meta itemprop="name" content="Eric439676's Blog">
     </span>
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2022/09/25/Center-Shifting-Theorem/Center-Shifting-Theorem/" class="post-title-link" itemprop="url">移心定理及其推广</a>
-        </h2>
+        <h1 class="post-title" itemprop="name headline">
+          移心定理及其推广
+        </h1>
 
         <div class="post-meta">
             <span class="post-meta-item">
@@ -328,6 +221,13 @@
               <span class="post-meta-item-text">Views: </span>
               <span class="firestore-visitors-count"></span>
             </span>
+            <span class="post-meta-item" title="Views" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">Views: </span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span>
 
         </div>
       </header>
@@ -338,7 +238,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="前言：首先来看原题"><a href="#前言：首先来看原题" class="headerlink" title="前言：首先来看原题"></a>前言：首先来看原题</h1><p>灵感来自于九上数学《课时》，P87第11题图2。</p>
+        <h1 id="前言：首先来看原题"><a href="#前言：首先来看原题" class="headerlink" title="前言：首先来看原题"></a>前言：首先来看原题</h1><p>灵感来自于九上数学《课时》，P87第11题图2。</p>
 <blockquote>
 <p>$如下图,已知 A,B,C,D 共圆,AB&#x3D;2,CD&#x3D;4;AC \bot BD,求圆的半径r.$<br>$（可拖动下图点A寻找思路）$</p>
 </blockquote>
@@ -374,27 +274,78 @@
 <p>当然如果我们把$r$这一项单提出来的话会得到一个很丑的式子。</p>
 <h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>所谓移心定理，其实就是将四条以<strong>外心</strong>为端点的线段，转换成以<strong>对心</strong>为端点的线段，再去探求它们之间的联系。<br><a target="_blank" rel="noopener" href="https://pic1.imgdb.cn/item/6367bbdc16f2c2beb1a785c7.jpg#pic_center=400x200">（最后附上原题版）</a></p>
 
-      
     </div>
 
     
     
     
+        <div class="reward-container">
+  <div></div>
+  <button onclick="var qr = document.getElementById('qr'); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+    Donate
+  </button>
+  <div id="qr" style="display: none;">
+      
+      <div style="display: inline-block;">
+        <img src="/images/wechatpay.png" alt="Eric439676 WeChat Pay">
+        <p>WeChat Pay</p>
+      </div>
+
+  </div>
+</div>
+
+        
+
+<div>
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>Post author:  </strong>Eric439676
+  </li>
+  <li class="post-copyright-link">
+    <strong>Post link: </strong>
+    <a href="http://example.com/2022/09/25/Center-Shifting-Theorem/Center-Shifting-Theorem/" title="移心定理及其推广">http://example.com/2022/09/25/Center-Shifting-Theorem/Center-Shifting-Theorem/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>Copyright Notice:  </strong>All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</a> unless stating additionally.
+  </li>
+</ul>
+</div>
+
+
       <footer class="post-footer">
-        <div class="post-eof"></div>
+          <div class="post-tags">
+              <a href="/tags/%E5%88%9D%E7%AD%89%E6%95%B0%E5%AD%A6/" rel="tag"># 初等数学</a>
+              <a href="/tags/%E5%87%A0%E4%BD%95/" rel="tag"># 几何</a>
+          </div>
+
+        
+  <div class="post-widgets">
+    <div class="wp_rating">
+      <div id="wpac-rating"></div>
+    </div>
+  </div>
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item"></div>
+      <div class="post-nav-item">
+    <a href="/2023/03/08/Weekly-Maths-Test/Weekly-Maths-Test/" rel="next" title="20230303数学试卷讲解">
+      20230303数学试卷讲解 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
       </footer>
+    
   </article>
   
   
   
 
 
-  
-
-
 
           </div>
           
+    <div class="comments" id="gitalk-container"></div>
 
 <script>
   window.addEventListener('tabs:register', () => {
@@ -441,6 +392,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%89%8D%E8%A8%80%EF%BC%9A%E9%A6%96%E5%85%88%E6%9D%A5%E7%9C%8B%E5%8E%9F%E9%A2%98"><span class="nav-number">1.</span> <span class="nav-text">前言：首先来看原题</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%A7%BB%E5%BF%83%E5%AE%9A%E7%90%86%E2%80%94%E2%80%94%E5%AF%B9%E8%A7%92%E7%BA%BF%E5%9E%82%E7%9B%B4%E7%89%88"><span class="nav-number">2.</span> <span class="nav-text">移心定理——对角线垂直版</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%A7%BB%E5%BF%83%E5%AE%9A%E7%90%86%E6%8E%A8%E5%B9%BF%E7%89%88"><span class="nav-number">2.1.</span> <span class="nav-text">移心定理推广版</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%80%BB%E7%BB%93"><span class="nav-number">3.</span> <span class="nav-text">总结</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -749,6 +701,25 @@
 
   
 
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.css">
+
+<script>
+NexT.utils.loadComments(document.querySelector('#gitalk-container'), () => {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js', () => {
+    var gitalk = new Gitalk({
+      clientID    : '',
+      clientSecret: '',
+      repo        : '',
+      owner       : '',
+      admin       : [''],
+      id          : '4dac11ff87c6bbafdacec9d0f7fa2f3d',
+        language: '',
+      distractionFreeMode: true
+    });
+    gitalk.render('gitalk-container');
+  }, window.Gitalk);
+});
+</script>
 
 </body>
 </html>
